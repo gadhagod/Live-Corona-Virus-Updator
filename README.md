@@ -1,4 +1,4 @@
-# Live-Corona-Virus-Updator
+# Live Corona Virus Feed
 Get a live update of the number of cases, recoveries, and deaths from the coronavirus. All versions of this program use the code from backend, so make sure to use backend if you want to use any of these versions.
 
 ### PyGame Version
