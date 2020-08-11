@@ -52,3 +52,4 @@ while True:
     disp.image(image)
     disp.display()
     time.sleep(.1)
+    delay(500)
