@@ -7,24 +7,19 @@ def connect():
     html_code_line = html_code.split('\n')
     return html_code_line
 
-
-class Global:
-    def __init__(self, code):
-        self.code = code
-
-    def cases(self):
+def cases():
         cases_ = self.code[self.code.index('<h1>Coronavirus Cases:</h1>') + 2]
         cases_ = cases_.replace('<span style="color:#aaa">', '')
         cases_ = cases_.replace('</span>', '')
         return cases_
 
-    def deaths(self):
+def deaths():
         deaths_ = self.code[self.code.index('<h1>Deaths:</h1>') + 2]
         deaths_ = deaths_.replace('<span>', '')
         deaths_ = deaths_.replace('</span>', '')
         return deaths_
 
-    def recoveries(self):
+    def recoveries():
         location_recoveries = requests.get("https://www.worldometers.info/coronavirus/").text[:100001].split('\n').index('<h1>Recovered:</h1>')
         recoveries_ = requests.get("https://www.worldometers.info/coronavirus/").text[:100001].split('\n')[location_recoveries + 2]
         recoveries_ = recoveries_.replace('<span>', '')
