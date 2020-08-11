@@ -37,12 +37,13 @@ x = 0
 font = ImageFont.load_default()
 
 while True:
-    backend.connect()
     draw.rectangle((0,0,width,height), outline=0, fill=0)
 
-    deaths1 = "Deaths: " + str(backend.deaths())
-    cases1 = "Cases: " + str(backend.cases())
-    recoveries1 = "Recovered: " + str(backend.recoveries())
+    cases1, deaths1, recoveries1 = backend.global_data.data_return()
+    
+    cases1 = "Deaths: " + str(cases1)
+    deaths1 = "Cases: " + str(deaths1)
+    recoveries1 = "Recovered: " + str(recoveries1)
 
     draw.text((x, top), deaths1,  font=font, fill=255)
     draw.text((x, top+10), cases1, font=font, fill=255)
