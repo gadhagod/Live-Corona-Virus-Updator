@@ -19,7 +19,7 @@ def deaths():
         deaths_ = deaths_.replace('</span>', '')
         return deaths_
 
-    def recoveries():
+def recoveries():
         location_recoveries = requests.get("https://www.worldometers.info/coronavirus/").text[:100001].split('\n').index('<h1>Recovered:</h1>')
         recoveries_ = requests.get("https://www.worldometers.info/coronavirus/").text[:100001].split('\n')[location_recoveries + 2]
         recoveries_ = recoveries_.replace('<span>', '')
