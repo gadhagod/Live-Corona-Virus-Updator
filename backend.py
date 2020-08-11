@@ -1,4 +1,4 @@
-import requests
+import request
 
 url = "https://www.worldometers.info/coronavirus/"
 response = requests.get(url)
