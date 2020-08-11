@@ -1,3 +1,4 @@
+# gets the data from the website
 import requests
 
 url = "https://www.worldometers.info/coronavirus/"
