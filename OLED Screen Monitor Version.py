@@ -1,4 +1,5 @@
 #thanks so adafruit for oled base code
+import backend
 import host
 import time
 import requests
@@ -36,11 +37,12 @@ x = 0
 font = ImageFont.load_default()
 
 while True:
+    backend.connect()
     draw.rectangle((0,0,width,height), outline=0, fill=0)
 
-    deaths1 = "Deaths: " + str(deaths())
-    cases1 = "Cases: " + str(cases())
-    recoveries1 = "Recovered: " + str(recoveries())
+    deaths1 = "Deaths: " + str(backend.deaths())
+    cases1 = "Cases: " + str(backend.cases())
+    recoveries1 = "Recovered: " + str(backend.recoveries())
 
     draw.text((x, top), deaths1,  font=font, fill=255)
     draw.text((x, top+10), cases1, font=font, fill=255)
