@@ -1,4 +1,4 @@
-#pygame version of the coronavirus updator
+# pygame version of the coronavirus updator
 import pygame
 import backend as bk
 
