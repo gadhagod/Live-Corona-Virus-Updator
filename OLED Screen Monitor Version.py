@@ -1,4 +1,4 @@
-#thanks so adafruit for base code
+#thanks so adafruit for oled base code
 import host
 import time
 import requests
