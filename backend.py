@@ -13,22 +13,22 @@ class global_data:
         self.code = code
 
     def cases(self):
-        cases_ = self.code[self.code.index('<h1>Coronavirus Cases:</h1>') + 2]
-        cases_ = cases_.replace('<span style="color:#aaa">', '')
-        cases_ = cases_.replace('</span>', '')
-        return cases_
+        cases = self.code[self.code.index('<h1>Coronavirus Cases:</h1>') + 2]
+        cases = cases.replace('<span style="color:#aaa">', '')
+        cases = cases.replace('</span>', '')
+        return cases
 
     def deaths(self):
-        deaths_ = self.code[self.code.index('<h1>Deaths:</h1>') + 2]
-        deaths_ = deaths_.replace('<span>', '')
-        deaths_ = deaths_.replace('</span>', '')
-        return deaths_
+        deaths = self.code[self.code.index('<h1>Deaths:</h1>') + 2]
+        deaths = deaths.replace('<span>', '')
+        deaths = deaths.replace('</span>', '')
+        return deaths
 
     def recoveries(self):
-        deaths_ = self.code[self.code.index('<h1>Recovered:</h1>') + 2]
-        recoveries_ = recoveries_.replace('<span>', '')
-        recoveries_ = recoveries_.replace('</span>', '')
-        return recoveries_
+        deaths = self.code[self.code.index('<h1>Recovered:</h1>') + 2]
+        recoveries = recoveries.replace('<span>', '')
+        recoveries = recoveries.replace('</span>', '')
+        return recoveries
 
 
 def data_return():
