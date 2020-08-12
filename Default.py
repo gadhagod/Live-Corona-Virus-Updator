@@ -1,9 +1,6 @@
 import sys, time
 import backend as bk
 
-sys.stdout.write('\rNOTICE: This version of the live coronavirus updater is very basic and has very limiting controls.')
-time.sleep(4)
-
 while True:
     cases, deaths, recovered = bk.data_return()
     sys.stdout.write('\rGlobal Cases: ' + format(cases))
