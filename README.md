@@ -8,4 +8,4 @@ This version of the live corona virus case feed requires pygame. It opens an app
 This version of the live corona virus case feed runs in the python console. It is easier to access, but there are no controls.
 
 ### OLED Screen Monitor Version
-This version of the live corona virus feed runs on a RPI (rasberry pi). It requires an OLED display. This is physical and can be hanged up on a wall or can be transported. Tutorial here: https://www.hackster.io/gadhagod/live-coronavirus-stats-display-e07e89.
+This version of the live corona virus feed runs on a RPI (rasberry pi). It requires an OLED display. This is physical and can be hanged up on a wall or be transported. Tutorial here: https://www.hackster.io/gadhagod/live-coronavirus-stats-display-e07e89.
