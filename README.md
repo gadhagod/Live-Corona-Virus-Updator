@@ -1,5 +1,5 @@
 # Live COVID-19 Feed
-Get a live update of the number of cases, recoveries, and deaths from the coronavirus. All versions of this program use the code from backend, so make sure to use backend if you want to use any of these versions.
+Get a live update of the number of cases, recoveries, and deaths from the coronavirus. All versions of this program use the code from backend, so make sure to use backend if you want to use any of these versions or other code.
 
 ### PyGame Version
 This version of the COVID-19 case feed requires pygame. It opens an application window with all the information. You can press space while in the window to change the color scheme. You can install pygame by running these commands in the python command line or terminal:
