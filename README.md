@@ -13,5 +13,5 @@ This version runs on the Rasberry Pi. It requires an I2C OLED display. Tutorial 
 <a href="GUIVersion.py"><h3>PySimpleGUI Version</h3></a>
 This version interactable and is similar to the PyGame version. It uses the PySimpleGUI library. 
 
-<a href="WebsiteVersion.js"><h3>Website Version</h3></a>
-This version displays stats on this <a href="OLEDScreenMonitorPage.js">webpage</a> You can share this link with other people.
+<a href="WebsiteVersion.js"><h3>Webpage Version</h3></a>
+This version displays stats on this <a href="https://covidstats.gadhagod.repl.co/">webpage</a>. You can share this link with other people.
